@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(36, 100%, 99%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 89px 165px 130px;
+  font-family: "Inter";
+}
+@media (max-width : 800px ) {
+  body {
+    padding: 24px 16px 81px;
+  }
+}

@@ -1,0 +1,249 @@
+.rootElement {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navElement {
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.navElement:hover {
+    color: hsl(5, 85%, 63%);
+}
+.main {
+    display: grid;
+    grid-template-columns: 2.085fr 1fr;
+    gap: 30px;
+    margin-bottom: 22px;
+}
+.web3DesktopImg {
+    width: 100%;
+}
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.descriptionSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 100%;
+}
+.headline {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 58px;
+    color: hsl(240, 100%, 5%);
+    height: 100%;
+}
+.explainationSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+
+}
+.explainationPara {
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+    line-height: 24px;
+}
+.readMoreButton {
+    width: 185px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    height: 48px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    font-weight: 800;
+    cursor: pointer;
+    color: hsl(240, 100%, 5%);
+    font-family: "Inter";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.readMoreButton:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+.rightSection {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 32px 24px;
+}
+.newPara {
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    margin: 32px 0 24px;
+}
+.newsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.newsHead {
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.newsHead:hover {
+    color: hsl(35, 77%, 62%);
+} 
+.newsExplaination {
+    color: hsl(233, 8%, 79%);
+    font-weight: 400;
+    font-size: 14.5px;
+    line-height: 26px;
+}
+.lowerSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+}
+.smallNews {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+}
+.newsImg {
+    width: 100px;
+}
+.divAfterDiv {
+    display: flex;
+    flex-direction: column;
+}
+.numPara {
+    font-weight: 700;
+    color: hsl(5, 85%, 63%);
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+.newA {
+    font-weight: 700;
+    color: hsl(240, 100%, 5%); 
+    font-size: 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.newA:hover {
+    color: hsl(5, 85%, 63%);
+}
+.newD {
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    font-size: 14.5px;
+    line-height: 21px;
+}
+.web3MobileImg {
+    display: none;
+}
+.hamButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 500;
+}
+.navBarElements {
+    position: absolute;
+    background-color: hsl(36, 100%, 99%);
+    right: 0;
+    top: 0;
+    width: 256px;
+    height: 100%;
+    padding: 150px 0 0 24px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+@media (max-width : 800px ) {
+    .rootElement {
+        gap: 32px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        gap: 64px;
+    }
+    .web3DesktopImg {
+        display: none;
+    }
+    .web3MobileImg {
+        display: block;
+        width: 100%;
+    }
+    .leftSection {
+        gap: 28px;
+    }
+    .descriptionSection {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: auto;
+    }
+    .headline {
+        font-size: 40px;
+        line-height: 40px;
+        height: auto;
+    }
+    .explainationSection {
+        height: auto;
+        gap: 28px;
+    }
+    .rightSection {
+        padding: 24px 16px;
+    }
+    .newPara {
+        font-size: 33px;
+    }
+    hr {
+        margin: 32px 0 30px;
+    }
+    .newsDiv {
+        gap: 8px;
+    }
+    .lowerSection {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .navElement {
+        color: hsl(240, 100%, 5%);
+        font-size: 18px;
+    }
+}
